@@ -1,0 +1,19 @@
+#ifndef FACTAUTOMATON_H
+#define FACTAUTOMATON_H
+
+#include "Automaton.h"
+
+class FactAutomaton : public Automaton
+{
+public:
+    FactAutomaton() : Automaton(TokenType::FACTS) {}  // Call the base constructor
+    ~FactAutomaton() = default;
+
+    void S0(const std::string& input);
+    void S1(const std::string& input);
+    void S2(const std::string& input);
+    void S3(const std::string& input);
+    void S4(const std::string& input);
+};
+
+#endif // FACTAUTOMATON_H
